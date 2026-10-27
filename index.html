@@ -517,7 +517,7 @@
                     <div class="svc-name">Filmagem Base</div>
                     <div class="svc-desc">Cobertura cinematográfica completa do dia do casamento, com equipa profissional e equipamento de cinema</div>
                 </div>
-                <div class="svc-price-cell">300€</div>
+                <div class="svc-price-cell">400€</div>
                 <div class="svc-check-cell"><span class="fixed-tag">Fixo</span></div>
             </div>
         </div>
@@ -554,13 +554,13 @@
                 <div class="total-label">Total</div>
                 <div class="total-klarna-wrap">
                     <span class="klarna-prefix">3×</span>
-                    <span class="klarna-installment" id="klarnaInstall">100€</span>
+                    <span class="klarna-installment" id="klarnaInstall">134€</span>
                     <span class="klarna-suffix">com <span class="klarna-badge">Klarna</span></span>
                 </div>
             </div>
             <div class="total-right">
                 <div class="total-full-label">Valor total</div>
-                <div class="total-value" id="totalVal">300€</div>
+                <div class="total-value" id="totalVal">400€</div>
             </div>
         </div>
         <button class="pay-btn disabled-state" id="payBtn" onclick="pay()">Selecione os serviços</button>
@@ -580,21 +580,21 @@
 
 <script>
 const SERVICES = [
-    { id: 'highlights', name: 'Reel Highlights',  icon: '✨', price: 100, desc: 'Os melhores momentos do dia editados cinematograficamente, até 5 minutos de duração' },
-    { id: 'filme',      name: 'Filme Completo',   icon: '🎞️', price: 200, desc: 'Documentário cinematográfico completo do casamento, com narrativa e som ambiente, até 20 minutos' },
-    { id: 'sameday',    name: 'Same Day Edit',    icon: '⚡', price: 100, desc: 'Edição rápida do dia, entregue e exibida durante a receção no mesmo dia do evento' },
-    { id: 'reels',      name: '3 Reels Trends',   icon: '📱', price: 50,  desc: 'Três reels verticais editados para formatos virais do Instagram e TikTok, prontos a publicar' },
+    { id: 'highlights', name: 'Reel Highlights',  icon: '✨', price: 150, desc: 'Os melhores momentos do dia editados cinematograficamente, até 5 minutos de duração' },
+    { id: 'filme',      name: 'Filme Completo',   icon: '🎞️', price: 250, desc: 'Documentário cinematográfico completo do casamento, com narrativa e som ambiente, até 20 minutos' },
+    { id: 'sameday',    name: 'Same Day Edit',    icon: '⚡', price: 150, desc: 'Edição rápida do dia, entregue e exibida durante a receção no mesmo dia do evento' },
+    { id: 'reels',      name: '3 Reels Trends',   icon: '📱', price: 100, desc: 'Três reels verticais editados para formatos virais do Instagram e TikTok, prontos a publicar' },
 ];
 
 const PACKAGES = [
-    { id: 'allin-pkg',      name: 'All-In',          icon: '🎯', items: ['base','highlights','filme','sameday','reels'], link: 'https://buy.stripe.com/cNi9AV2tvcREfX4dLQ4Ja0s' },
-    { id: 'full-pkg',       name: 'Full Experience', icon: '🏆', items: ['base','highlights','filme','sameday'],          link: 'https://buy.stripe.com/bJebJ3fgh04SeT00Z44Ja0r' },
-    { id: 'premium-social', name: 'Premium Social',  icon: '👑', items: ['base','highlights','filme','reels'],           link: 'https://buy.stripe.com/aFafZj7NP9Fs5iq37c4Ja0t' },
-    { id: 'cinematic-pkg',  name: 'Cinematic',       icon: '🎬', items: ['base','highlights','filme'],                   link: 'https://buy.stripe.com/7sYbJ33xz4l88uCcHM4Ja0o' },
-    { id: 'viral-pkg',      name: 'Viral',           icon: '🔥', items: ['base','highlights','reels'],                   link: 'https://buy.stripe.com/3cI14p6JLaJwaCKcHM4Ja0p' },
-    { id: 'premium-pkg',    name: 'Premium',         icon: '💎', items: ['base','highlights','sameday'],                 link: 'https://buy.stripe.com/5kQ7sN3xzaJw6mugY24Ja0q' },
-    { id: 'highlights-pkg', name: 'Highlights',      icon: '✨', items: ['base','highlights'],                           link: 'https://buy.stripe.com/dRmfZj6JLg3QaCK5fk4Ja0k' },
-    { id: 'filme-pkg',      name: 'Filme',           icon: '🎞️', items: ['base','filme'],                               link: 'https://buy.stripe.com/dRm9AV6JL18WbGO9vA4Ja0l' },
+    { id: 'allin-pkg',      name: 'All-In',          icon: '🎯', items: ['base','highlights','filme','sameday','reels'], link: 'https://buy.stripe.com/00w7sNfgh5pceT04bg4Ja0K' },
+    { id: 'full-pkg',       name: 'Full Experience', icon: '🏆', items: ['base','highlights','filme','sameday'],          link: 'https://buy.stripe.com/6oUbJ30ln18W6muazE4Ja0L' },
+    { id: 'premium-social', name: 'Premium Social',  icon: '👑', items: ['base','highlights','filme','reels'],           link: 'https://buy.stripe.com/9B69AVfgh6tg7qy37c4Ja0M' },
+    { id: 'cinematic-pkg',  name: 'Cinematic',       icon: '🎬', items: ['base','highlights','filme'],                   link: 'https://buy.stripe.com/14AeVf9VX5pc12abDI4Ja0N' },
+    { id: 'viral-pkg',      name: 'Viral',           icon: '🔥', items: ['base','highlights','reels'],                   link: 'https://buy.stripe.com/bJecN75FHdVIfX4bDI4Ja0O' },
+    { id: 'premium-pkg',    name: 'Premium',         icon: '💎', items: ['base','highlights','sameday'],                 link: 'https://buy.stripe.com/7sY6oJecd5pc7qy5fk4Ja0P' },
+    { id: 'highlights-pkg', name: 'Highlights',      icon: '✨', items: ['base','highlights'],                           link: 'https://buy.stripe.com/eVqaEZecd8Bo26e9vA4Ja0Q' },
+    { id: 'filme-pkg',      name: 'Filme',           icon: '🎞️', items: ['base','filme'],                               link: 'https://buy.stripe.com/6oUfZj1prcRE3aifTY4Ja0R' },
 ];
 
 let selected = new Set();
@@ -638,7 +638,7 @@ function findPackage() {
 }
 
 function refresh() {
-    const total = 300 + [...selected].reduce((sum, id) => sum + (SERVICES.find(s => s.id === id)?.price || 0), 0);
+    const total = 400 + [...selected].reduce((sum, id) => sum + (SERVICES.find(s => s.id === id)?.price || 0), 0);
     const install = Math.ceil(total / 3);
     document.getElementById('klarnaInstall').textContent = install + '€';
     document.getElementById('totalVal').textContent = total + '€';
